@@ -50,11 +50,37 @@
 
 import math
 
-usernum1 = int(input("Please input a whole number: "))
-usernum2 = int(input("Please input a second whole number: "))
+# def gcffinder():
+#     usernumber1 = int(input(" What will be your first whole number?: "))
+#     usernumber2 = int(input(" What is your second whole number?: "))
+#     gcf = math.gcd(usernumber1, usernumber2)
+#     print(gcf)
 
-gcd = math.gcd(usernum1, usernum2)
-print(f" The gcf of {usernum1} and {usernum2} is {gcd}")
+
+
+usernumber = int(input(" What whole number would you pick: "))
+
+def allfactors(usernumber):
+    factorlist = []
+    for i in range(1, usernumber):
+        usernumber % 2
+        if usernumber == 0:
+            factorlist.append
+    for i in factorlist:
+        print(factorlist)
+            
+            
+    
+
+            
+        
+           
+            
+    
+all    
+    
+            
+
 
 
 
