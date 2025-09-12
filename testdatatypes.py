@@ -62,22 +62,21 @@ usernumber = int(input(" What whole number would you pick: "))
 
 def allfactors(usernumber):
     factorlist = []
-    for i in range(1, usernumber):
-        usernumber % 2
-        if usernumber == 0:
-            factorlist.append
-    for i in factorlist:
-        print(factorlist)
+    for number in range(1, usernumber):
+        if  usernumber % number == 0:
+            factorlist.append(number)
+    for number in factorlist:
+        print(number)
             
             
-    
+allfactors(usernumber)
 
             
         
            
             
     
-all    
+    
     
             
 
