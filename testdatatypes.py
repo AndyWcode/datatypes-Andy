@@ -58,18 +58,44 @@ import math
 
 
 
-usernumber = int(input(" What whole number would you pick: "))
+# usernumber = int(input(" What whole number would you pick: "))
 
-def allfactors(usernumber):
-    factorlist = []
-    for number in range(1, usernumber):
-        if  usernumber % number == 0:
-            factorlist.append(number)
-    for number in factorlist:
-        print(number)
+# def allfactors(usernumber):
+#     factorlist = []
+#     for number in range(1, usernumber+ 1):
+#         if  usernumber % number == 0:
+#             factorlist.append(number)
+#     print("Factors")
+#     print("//////")
+#     for number in factorlist:
+#         print(number)
+#         print("//////")
             
-            
-allfactors(usernumber)
+
+
+import random
+def guessgame():
+        largestnm = 100
+        randomnumber = random.randint(1,largestnm)
+        if  userguess > randomnumber:
+            print("Number is higher")
+            userguesshistory.append(userguess)
+        if userguess < randomnumber:
+            print("Number is lower")
+            userguesshistory.append(userguess)
+            guess +=1
+        else:
+             
+while True: 
+    userguess = input("Input a number to guess!: ")
+    userguesshistory = []
+    guesses = 0 
+    
+
+
+    
+    
+
 
             
         
