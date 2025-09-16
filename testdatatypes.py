@@ -76,25 +76,36 @@ import math
 import random
 def guessgame():
         largestnm = 100
+        guesses = 0 
         randomnumber = random.randint(1,largestnm)
-        if  userguess > randomnumber:
-            print("Number is higher")
-            userguesshistory.append(userguess)
-        if userguess < randomnumber:
-            print("Number is lower")
-            userguesshistory.append(userguess)
-            guess +=1
-        else:
+        userguesshistory = []
+        while True: 
+            userguess = input("Input a number to guess!: ")
+            
+            if userguess.isdigit() == False:
+                 print(f"NO LETTERS, PICK (1-{largestnm})")
+            elif int(userguess) > largestnm:
+                 print(f"You can only pick numbers 1-{largestnm}!!!!!")
+
+
+            elif int(userguess) > randomnumber:
+                print("pick a lower number!")
+                userguesshistory.append(userguess)
+                guesses += 1
+            elif int(userguess) < randomnumber:
+                print("pick a higher number!")
+                userguesshistory.append(userguess)
+                guesses += 1
+            else:
+                print(f" You guessed the CORRECT NUMBER OF {randomnumber}!!")
+                print("YOUR WRONG GUESSES")
+                print(userguesshistory)
+                print(f"It took you {guesses} guesses!")
+                break
+            
              
-while True: 
-    userguess = input("Input a number to guess!: ")
-    userguesshistory = []
-    guesses = 0 
-    
 
-
-    
-    
+guessgame()
 
 
             
