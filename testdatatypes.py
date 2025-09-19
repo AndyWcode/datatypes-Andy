@@ -48,14 +48,19 @@
 #     else:
 #          print(" YOU HAVE TO EITHER TYPE BAD, OKAY, GOOD, OR GREAT!!")
 
-import math
 
-# def gcffinder():
-#     usernumber1 = int(input(" What will be your first whole number?: "))
-#     usernumber2 = int(input(" What is your second whole number?: "))
-#     gcf = math.gcd(usernumber1, usernumber2)
-#     print(gcf)
 
+def findgcf():
+    usernum1 = int(input("Put your first number: "))
+    usernum2 = int(input("Please put your second number: "))
+    for i  in range(0, usernum1),(0,usernum2):
+        gcf = usernum1 % 2 == 0
+        gcf1 = usernum2 % 2 == 0 
+        if gc
+        
+          
+findgcf() 
+     
 
 
 # usernumber = int(input(" What whole number would you pick: "))
@@ -73,39 +78,6 @@ import math
             
 
 
-import random
-def guessgame():
-        largestnm = 100
-        guesses = 0 
-        randomnumber = random.randint(1,largestnm)
-        userguesshistory = []
-        while True: 
-            userguess = input("Input a number to guess!: ")
-            
-            if userguess.isdigit() == False:
-                 print(f"NO LETTERS, PICK (1-{largestnm})")
-            elif int(userguess) > largestnm:
-                 print(f"You can only pick numbers 1-{largestnm}!!!!!")
-
-
-            elif int(userguess) > randomnumber:
-                print("pick a lower number!")
-                userguesshistory.append(userguess)
-                guesses += 1
-            elif int(userguess) < randomnumber:
-                print("pick a higher number!")
-                userguesshistory.append(userguess)
-                guesses += 1
-            else:
-                print(f" You guessed the CORRECT NUMBER OF {randomnumber}!!")
-                print("YOUR WRONG GUESSES")
-                print(userguesshistory)
-                print(f"It took you {guesses} guesses!")
-                break
-            
-             
-
-guessgame()
 
 
             
