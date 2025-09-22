@@ -50,15 +50,18 @@
 
 
 
+
 def findgcf():
     usernum1 = int(input("Put your first number: "))
     usernum2 = int(input("Please put your second number: "))
-    for i  in range(0, usernum1),(0,usernum2):
-        gcf = usernum1 % 2 == 0
-        gcf1 = usernum2 % 2 == 0 
-        if gc
+    gcf = []
+    minimum = min(usernum1, usernum2)
+    for number in range(1, minimum+1):
+        if usernum1 % number == 0 and usernum2 % number == 0:
+           gcf.append(number)
+    print(max(gcf))
         
-          
+
 findgcf() 
      
 
